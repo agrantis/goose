@@ -6,7 +6,7 @@ type SQLAnywhere struct{}
 
 func (s *SQLAnywhere) CreateTable(tableName string) string {
 	q := `CREATE TABLE %s (
-		id serial NOT NULL,
+		id INTEGER DEFAULT AUTOINCREMENT,
 		version_id bigint NOT NULL,
 		is_applied boolean NOT NULL,
 		tstamp timestamp NULL default now(),
