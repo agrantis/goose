@@ -11,15 +11,16 @@ import (
 type Dialect = database.Dialect
 
 const (
-	DialectClickHouse Dialect = database.DialectClickHouse
-	DialectMSSQL      Dialect = database.DialectMSSQL
-	DialectMySQL      Dialect = database.DialectMySQL
-	DialectPostgres   Dialect = database.DialectPostgres
-	DialectRedshift   Dialect = database.DialectRedshift
-	DialectSQLite3    Dialect = database.DialectSQLite3
-	DialectTiDB       Dialect = database.DialectTiDB
-	DialectVertica    Dialect = database.DialectVertica
-	DialectYdB        Dialect = database.DialectYdB
+	DialectClickHouse  Dialect = database.DialectClickHouse
+	DialectMSSQL       Dialect = database.DialectMSSQL
+	DialectMySQL       Dialect = database.DialectMySQL
+	DialectPostgres    Dialect = database.DialectPostgres
+	DialectRedshift    Dialect = database.DialectRedshift
+	DialectSQLite3     Dialect = database.DialectSQLite3
+	DialectTiDB        Dialect = database.DialectTiDB
+	DialectVertica     Dialect = database.DialectVertica
+	DialectYdB         Dialect = database.DialectYdB
+	DialectSQLAnywhere Dialect = database.DialectSQLAnywhere
 )
 
 func init() {
@@ -50,6 +51,8 @@ func SetDialect(s string) error {
 		d = dialect.Vertica
 	case "ydb":
 		d = dialect.Ydb
+	case "sqlanywhere", "sqlany":
+		d = dialect.Sqlanywhere
 	default:
 		return fmt.Errorf("%q: unknown dialect", s)
 	}

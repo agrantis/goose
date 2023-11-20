@@ -1,5 +1,5 @@
-//go:build !no_postgres
-// +build !no_postgres
+//go:build !no_sqlanywhere
+// +build !no_sqlanywhere
 
 package main
 

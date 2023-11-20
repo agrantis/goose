@@ -22,6 +22,7 @@ require (
 	github.com/ClickHouse/ch-go v0.58.2 // indirect
 	github.com/Microsoft/go-winio v0.6.1 // indirect
 	github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 // indirect
+	github.com/a-palchikov/sqlago v0.0.0-20151220223736-04d21f1d79e5 // indirect
 	github.com/andybalholm/brotli v1.0.6 // indirect
 	github.com/cenkalti/backoff/v4 v4.2.1 // indirect
 	github.com/containerd/continuity v0.4.3 // indirect

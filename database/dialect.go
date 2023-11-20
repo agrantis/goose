@@ -13,15 +13,16 @@ import (
 type Dialect string
 
 const (
-	DialectClickHouse Dialect = "clickhouse"
-	DialectMSSQL      Dialect = "mssql"
-	DialectMySQL      Dialect = "mysql"
-	DialectPostgres   Dialect = "postgres"
-	DialectRedshift   Dialect = "redshift"
-	DialectSQLite3    Dialect = "sqlite3"
-	DialectTiDB       Dialect = "tidb"
-	DialectVertica    Dialect = "vertica"
-	DialectYdB        Dialect = "ydb"
+	DialectClickHouse  Dialect = "clickhouse"
+	DialectMSSQL       Dialect = "mssql"
+	DialectMySQL       Dialect = "mysql"
+	DialectPostgres    Dialect = "postgres"
+	DialectRedshift    Dialect = "redshift"
+	DialectSQLite3     Dialect = "sqlite3"
+	DialectTiDB        Dialect = "tidb"
+	DialectVertica     Dialect = "vertica"
+	DialectYdB         Dialect = "ydb"
+	DialectSQLAnywhere Dialect = "sqlanywhere"
 )
 
 // NewStore returns a new [Store] implementation for the given dialect.
@@ -33,15 +34,16 @@ func NewStore(dialect Dialect, tablename string) (Store, error) {
 		return nil, errors.New("dialect must not be empty")
 	}
 	lookup := map[Dialect]dialectquery.Querier{
-		DialectClickHouse: &dialectquery.Clickhouse{},
-		DialectMSSQL:      &dialectquery.Sqlserver{},
-		DialectMySQL:      &dialectquery.Mysql{},
-		DialectPostgres:   &dialectquery.Postgres{},
-		DialectRedshift:   &dialectquery.Redshift{},
-		DialectSQLite3:    &dialectquery.Sqlite3{},
-		DialectTiDB:       &dialectquery.Tidb{},
-		DialectVertica:    &dialectquery.Vertica{},
-		DialectYdB:        &dialectquery.Ydb{},
+		DialectClickHouse:  &dialectquery.Clickhouse{},
+		DialectMSSQL:       &dialectquery.Sqlserver{},
+		DialectMySQL:       &dialectquery.Mysql{},
+		DialectPostgres:    &dialectquery.Postgres{},
+		DialectRedshift:    &dialectquery.Redshift{},
+		DialectSQLite3:     &dialectquery.Sqlite3{},
+		DialectTiDB:        &dialectquery.Tidb{},
+		DialectVertica:     &dialectquery.Vertica{},
+		DialectYdB:         &dialectquery.Ydb{},
+		DialectSQLAnywhere: &dialectquery.SQLAnywhere{},
 	}
 	querier, ok := lookup[dialect]
 	if !ok {
