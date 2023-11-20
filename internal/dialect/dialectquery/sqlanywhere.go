@@ -8,7 +8,7 @@ func (s *SQLAnywhere) CreateTable(tableName string) string {
 	q := `CREATE TABLE %s (
 		id INTEGER DEFAULT AUTOINCREMENT,
 		version_id bigint NOT NULL,
-		is_applied boolean NOT NULL,
+		is_applied bit NOT NULL,
 		tstamp timestamp NULL default now(),
 		PRIMARY KEY(id)
 	)`
