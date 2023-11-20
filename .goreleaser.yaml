@@ -12,12 +12,12 @@ builds:
     binary: goose
     main: ./cmd/goose
     goos:
-      - linux
+#      - linux
       - windows
-      - darwin
+#      - darwin
     goarch:
       - amd64
-      - arm64
+#      - arm64
     ldflags:
       # The v prefix is stripped by goreleaser, so we need to add it back.
       # https://goreleaser.com/customization/templates/#fnref:version-prefix
