@@ -6,9 +6,9 @@ import (
 	"testing"
 	"testing/fstest"
 
-	"github.com/pressly/goose/v3"
-	"github.com/pressly/goose/v3/database"
-	"github.com/pressly/goose/v3/internal/check"
+	"github.com/agrantis/goose/v3"
+	"github.com/agrantis/goose/v3/database"
+	"github.com/agrantis/goose/v3/internal/check"
 	_ "modernc.org/sqlite"
 )
 

@@ -5,8 +5,8 @@ import (
 	"testing"
 	"testing/fstest"
 
-	"github.com/pressly/goose/v3/database"
-	"github.com/pressly/goose/v3/internal/check"
+	"github.com/agrantis/goose/v3/database"
+	"github.com/agrantis/goose/v3/internal/check"
 )
 
 func TestCollectFileSources(t *testing.T) {

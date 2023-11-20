@@ -1,9 +1,10 @@
-module github.com/pressly/goose/v3
+module github.com/agrantis/goose/v3
 
 go 1.19
 
 require (
 	github.com/ClickHouse/clickhouse-go/v2 v2.15.0
+	github.com/a-palchikov/sqlago v0.0.0-20151220223736-04d21f1d79e5
 	github.com/go-sql-driver/mysql v1.7.1
 	github.com/jackc/pgx/v5 v5.5.0
 	github.com/microsoft/go-mssqldb v1.6.0
@@ -22,7 +23,6 @@ require (
 	github.com/ClickHouse/ch-go v0.58.2 // indirect
 	github.com/Microsoft/go-winio v0.6.1 // indirect
 	github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 // indirect
-	github.com/a-palchikov/sqlago v0.0.0-20151220223736-04d21f1d79e5 // indirect
 	github.com/andybalholm/brotli v1.0.6 // indirect
 	github.com/cenkalti/backoff/v4 v4.2.1 // indirect
 	github.com/containerd/continuity v0.4.3 // indirect

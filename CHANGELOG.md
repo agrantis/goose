@@ -86,11 +86,11 @@ Here's a quick summary:
 - Add new `context.Context`-aware functions and methods, for both sql and go migrations.
 - Return error when no migration files found or dir is not a directory.
 
-[Unreleased]: https://github.com/pressly/goose/compare/v3.16.0...HEAD
-[v3.16.0]: https://github.com/pressly/goose/compare/v3.15.1...v3.16.0
-[v3.15.1]: https://github.com/pressly/goose/compare/v3.15.0...v3.15.1
-[v3.15.0]: https://github.com/pressly/goose/compare/v3.14.0...v3.15.0
-[v3.14.0]: https://github.com/pressly/goose/compare/v3.13.4...v3.14.0
-[v3.13.4]: https://github.com/pressly/goose/compare/v3.13.1...v3.13.4
-[v3.13.1]: https://github.com/pressly/goose/compare/v3.13.0...v3.13.1
-[v3.13.0]: https://github.com/pressly/goose/releases/tag/v3.13.0
+[Unreleased]: https://github.com/agrantis/goose/compare/v3.16.0...HEAD
+[v3.16.0]: https://github.com/agrantis/goose/compare/v3.15.1...v3.16.0
+[v3.15.1]: https://github.com/agrantis/goose/compare/v3.15.0...v3.15.1
+[v3.15.0]: https://github.com/agrantis/goose/compare/v3.14.0...v3.15.0
+[v3.14.0]: https://github.com/agrantis/goose/compare/v3.13.4...v3.14.0
+[v3.13.4]: https://github.com/agrantis/goose/compare/v3.13.1...v3.13.4
+[v3.13.1]: https://github.com/agrantis/goose/compare/v3.13.0...v3.13.1
+[v3.13.0]: https://github.com/agrantis/goose/releases/tag/v3.13.0
